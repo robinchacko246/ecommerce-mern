@@ -10,7 +10,8 @@ const createToken = ({ id, isAdmin }) => {
 const checkPassword = (dbPassword, password) => {
 	const decodedPassword = AES.decrypt(dbPassword, process.env.PASSWORD_SECRET)
 	const originalPassword = decodedPassword.toString(CryptoJS.enc.Utf8)
-
+     console.log(password,originalPassword);
+	 console.log("origin",dbPassword);
 	if (password === originalPassword) return true
 	else return false
 }

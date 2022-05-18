@@ -9,7 +9,7 @@ const ResetPassword = () => {
 	return (
 		<>
 			<Helmet>
-				<title>Reno - Reset Password</title>
+				<title>Reno - Reset Passworda</title>
 				<meta name="description" content="Helmet application" />
 			</Helmet>
 			<CustomerLayout>

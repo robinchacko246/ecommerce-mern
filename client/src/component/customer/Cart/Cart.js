@@ -26,7 +26,7 @@ import CustomerLayout from '../CustomerLayout/CustomerLayout'
 import { useStyles } from './styles'
 
 const KEY = process.env.REACT_APP_STRIPE_KEY
-
+console.log("stripe key",KEY);
 const Cart = () => {
 	const classes = useStyles()
 	const user = useSelector((state) => state.auth.user)

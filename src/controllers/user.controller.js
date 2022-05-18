@@ -131,6 +131,7 @@ console.log("inside ========");
 
 exports.resetPassword = async (req, res, next) => {
 	try {
+		console.log("body",req.body);
 		const user = await User.findById(req.params.id)
 
 		if (!user) {

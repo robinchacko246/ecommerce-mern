@@ -64,7 +64,16 @@ export const forgotPassword = createAsyncThunk(
 		}
 	}
 )
-
+export const resetPassword = createAsyncThunk(
+	'/user/password-reset/:id/:token',
+	async (data, { rejectWithValue }) => {
+		try {
+			return await userAPI.resetPassword(data)
+		} catch (error) {
+			return rejectWithValue(error.response)
+		}
+	}
+)
 export const deleteUser = createAsyncThunk(
 	'user/deleteUser',
 	async (id, { rejectWithValue, dispatch }) => {

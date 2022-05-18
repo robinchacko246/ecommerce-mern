@@ -31,9 +31,10 @@ const userAPI = {
 		return await axiosClient.post(url, { email })
 	},
 
-	resetPassword: async (id, token) => {
-		const url = `/users/password-reset/:${id}/:${token}`
-		return await axiosClient.post(url)
+	resetPassword: async (data) => {
+		let password=data.password
+		const url = `/users/password-reset/${data.id}/${data.token}`
+		return await axiosClient.post(url,{password})
 	},
 }
 
