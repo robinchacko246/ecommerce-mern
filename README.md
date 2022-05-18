@@ -9,7 +9,7 @@ CLOUD_API_SECRET=eLE2AyS2SWetu3JzfYELdq0ffoo
 JWT_RESET_PASSWORD_TOKEN=5448lord
 HOST=smtp.gmail.com
 EMAILUSERNAME=robinchacko246@gmail.com
-PASS=5448appachan
-PASS_SEC=5448appachan
+PASS=
+PASS_SEC==
 BASE_URL=http://localhost:3000
 JWT_SECRET=5448lord
