@@ -7,7 +7,7 @@ const connectDB = async (req, res) => {
 			useUnifiedTopology: true,
 		})
 
-		console.log('Connected to MongoDB')
+		console.log('Connected to MongoDB a')
 	} catch (error) {
 		console.log('Error: ', error)
 	}
